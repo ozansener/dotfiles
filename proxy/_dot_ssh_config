@@ -1,0 +1,10 @@
+Host *.amazonaws.com
+    ProxyCommand /usr/bin/nc -X 5 -x proxy-us.intel.com:1080 %h %p
+
+Host bitbucket.org
+    ProxyCommand /usr/bin/nc -X 5 -x proxy-us.intel.com:1080 %h %p
+
+#Host github.com
+#    ProxyCommand /usr/bin/nc -X 5 -x proxy-us.intel.com:1080 %h %p
+
+
